@@ -21,3 +21,38 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.post-enter {
+    opacity: 0;
+    transition: 500ms ease-in;
+}
+.post-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+.post-exit {
+    opacity: 1;
+    transition: 500ms ease-in;
+}
+.post-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+}
+
+.page__wrapper{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.page{
+    padding: 10px;
+    border: 1px solid #bc40ff;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.page__current{
+    background: #bc40ff;
+    color:#fff;
+}
